@@ -114,8 +114,7 @@ class BinarySearchTree {
         return data;
     }
     duplicate() {
-        let data = this.dfsPostOrder();
-        data.reverse();
+        let data = this.dfsPostOrder().reverse();
         let newtree = new BinarySearchTree();
 
         data.forEach((num) => newtree.insert(num));
